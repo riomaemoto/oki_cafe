@@ -362,35 +362,35 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-8 text-center">
               <div className="mb-4">
-                <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
+                <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐☆</span>
               </div>
-              <p className="text-gray-600 mb-6 italic">
-                "沖縄の美しい景色を見ながら飲むコーヒーは格別です。スタッフの方も親切で、また来たいと思います。"
-              </p>
-              <div className="font-semibold text-gray-800">田中 美咲</div>
-              <div className="text-gray-500 text-sm">東京都</div>
+              <p className="text-gray-600 mb-6 italic">{t("home.review1")}</p>
+              <div className="font-semibold text-gray-800">
+                {t("home.reviewer1")}
+              </div>
+              <div className="text-gray-500 text-sm">{t("home.location1")}</div>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-8 text-center">
               <div className="mb-4">
                 <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
               </div>
-              <p className="text-gray-600 mb-6 italic">
-                "雰囲気が最高で、仕事の合間にリラックスできる場所です。Wi-Fiも完備されていて助かります。"
-              </p>
-              <div className="font-semibold text-gray-800">山田 花子</div>
-              <div className="text-gray-500 text-sm">沖縄県</div>
+              <p className="text-gray-600 mb-6 italic">{t("home.review2")}</p>
+              <div className="font-semibold text-gray-800">
+                {t("home.reviewer2")}
+              </div>
+              <div className="text-gray-500 text-sm">{t("home.location2")}</div>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-8 text-center">
               <div className="mb-4">
-                <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
+                <span className="text-yellow-400 text-2xl">⭐⭐⭐☆☆</span>
               </div>
-              <p className="text-gray-600 mb-6 italic">
-                "地元の食材を使った料理が本当に美味しい！特にサンドイッチがおすすめです。"
-              </p>
-              <div className="font-semibold text-gray-800">佐藤 健</div>
-              <div className="text-gray-500 text-sm">大阪府</div>
+              <p className="text-gray-600 mb-6 italic">{t("home.review3")}</p>
+              <div className="font-semibold text-gray-800">
+                {t("home.reviewer3")}
+              </div>
+              <div className="text-gray-500 text-sm">{t("home.location3")}</div>
             </div>
           </div>
         </div>

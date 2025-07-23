@@ -54,6 +54,18 @@ export const translations = {
       viewMenu: "メニューを見る",
       seeAllMenu: "全メニューを見る",
       order: "注文",
+      review1:
+        "沖縄の美しい景色を見ながら飲むコーヒーは格別です。スタッフの方も親切で、また来たいと思います。",
+      reviewer1: "田中 美咲",
+      location1: "東京都",
+      review2:
+        "雰囲気が最高で、仕事の合間にリラックスできる場所です。Wi-Fiも完備されていて助かります。",
+      reviewer2: "山田 花子",
+      location2: "沖縄県",
+      review3:
+        "地元の食材を使った料理が本当に美味しい！特にサンドイッチがおすすめです。",
+      reviewer3: "佐藤 健",
+      location3: "大阪府",
     },
     menu: {
       title: "メニュー",
@@ -190,6 +202,18 @@ export const translations = {
       viewMenu: "View Menu",
       seeAllMenu: "See All Menu",
       order: "Order",
+      review1:
+        "The coffee while viewing Okinawa's beautiful scenery is exceptional. The staff is also kind and I want to come again.",
+      reviewer1: "Misaki Tanaka",
+      location1: "Tokyo",
+      review2:
+        "The atmosphere is amazing, it's a perfect place to relax during work breaks. The Wi-Fi is also fully equipped which is helpful.",
+      reviewer2: "Hanako Yamada",
+      location2: "Okinawa",
+      review3:
+        "The dishes made with local ingredients are really delicious! I especially recommend the sandwich.",
+      reviewer3: "Ken Sato",
+      location3: "Osaka",
     },
     menu: {
       title: "Menu",
