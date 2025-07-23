@@ -55,7 +55,7 @@ export default function MobileMenu() {
 
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black transition-opacity duration-300 ${
+        className={`fixed inset-0 transition-opacity duration-300 z-40 ${
           isOpen ? "opacity-50" : "opacity-0 pointer-events-none"
         }`}
         onClick={toggleMenu}
