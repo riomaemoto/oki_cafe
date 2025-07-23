@@ -55,7 +55,7 @@ export default function MobileMenu() {
 
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black transition-opacity duration-300 z-40 ${
+        className={`fixed inset-0 bg-black transition-opacity duration-300 ${
           isOpen ? "opacity-50" : "opacity-0 pointer-events-none"
         }`}
         onClick={toggleMenu}
@@ -67,7 +67,7 @@ export default function MobileMenu() {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="pt-20 px-6">
+        <div className="pt-20 px-6 bg-orange-100">
           {/* Logo */}
           <div className="mb-8 text-center">
             <h2 className="text-2xl font-bold text-amber-700 mb-2">
@@ -93,7 +93,6 @@ export default function MobileMenu() {
                     ? `translate-x-0 opacity-100 ${delay}`
                     : "translate-x-8 opacity-0"
                 }`}
-                style={{ transitionDelay: isOpen ? "0ms" : "0ms" }}
               >
                 {t(key)}
               </Link>
