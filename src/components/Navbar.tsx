@@ -40,8 +40,8 @@ export default function Navbar() {
       if (!scrolled) {
         return `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md ${
           isActive
-            ? "bg-amber-600 text-white"
-            : "text-white-700 hover:text-amber-600 hover:bg-amber-50"
+            ? "bg-amber-600 text-white drop-shadow-lg"
+            : "text-black hover:text-amber-600 hover:bg-amber-50 bg-white/20"
         }`;
       }
     }
@@ -54,16 +54,8 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className={`text-3xl font-bold transition-all duration-300 hover:scale-110 ${
-                isHomePage
-                  ? scrolled
-                    ? "text-amber-600"
-                    : "text-white drop-shadow-lg"
-                  : "text-amber-600"
-              }`}
-            >
-              沖縄カフェ
-            </Link>
+              className={`text-3xl font-bold transition-all duration-300 hover:scale-110`}
+            ></Link>
           </div>
 
           <div className="hidden md:block">

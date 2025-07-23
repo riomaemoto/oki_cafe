@@ -21,8 +21,8 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-amber-50">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-4 py-12 pt-50">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             {t("about.title")}

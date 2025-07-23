@@ -7,7 +7,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-teal-50">
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12 pt-50">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             {t("contact.title")}
