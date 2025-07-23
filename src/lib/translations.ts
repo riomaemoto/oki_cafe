@@ -44,10 +44,10 @@ export const translations = {
       artExhibitTime: "常設展示・月替わり",
       artExhibitDesc:
         "地元のアーティストの作品を展示しています。絵画、写真、工芸品など、沖縄の文化を感じられる作品をご覧いただけます。",
-      bookClub: "読書会",
-      bookClubTime: "毎月第2日曜日 14:00-16:00",
+      bookClub: "貸し切りイベント",
+      bookClubTime: "毎月第2日曜日 10:00-16:00",
       bookClubDesc:
-        "本好きの方々が集まる読書会です。毎月テーマを決めて、参加者同士で感想を共有し合います。新しい本との出会いがここにあります。",
+        "イベントスペースを貸し切って、特別な時間をお過ごしいただけます。誕生日パーティーや結婚式の二次会など、様々な用途でご利用いただけます。",
       visitNow: "今すぐご来店ください",
       visitDesc: "忘れられない体験をお楽しみください。",
       viewStore: "店舗情報を見る",
@@ -116,6 +116,7 @@ export const translations = {
       address_text: "沖縄県那覇市美栄橋1-2-3",
       phone_text: "098-123-4567",
       hours_text: "8:00 - 20:00（年中無休）",
+      storeinfo: "店舗情報",
     },
     common: {
       price: "¥",
@@ -179,10 +180,10 @@ export const translations = {
       artExhibitTime: "Permanent & Monthly Rotating",
       artExhibitDesc:
         "We display works by local artists. You can view paintings, photographs, crafts and other works that capture the culture of Okinawa.",
-      bookClub: "Book Club",
-      bookClubTime: "Every 2nd Sunday 2:00-4:00 PM",
+      bookClub: "Booking Events",
+      bookClubTime: "Every 2nd Sunday 10:00-4:00 PM",
       bookClubDesc:
-        "A gathering place for book lovers. We decide on themes each month and share impressions among participants. New book discoveries await here.",
+        "You can book our event space for special occasions. Whether it's a birthday party or a wedding reception, we can accommodate various needs.",
       visitNow: "Visit us today",
       visitDesc: "for an unforgettable experience",
       viewStore: "View Store Info",
@@ -253,6 +254,7 @@ export const translations = {
       address_text: "1-2-3 Miebashi, Naha, Okinawa",
       phone_text: "098-123-4567",
       hours_text: "8:00 - 20:00 (Open daily)",
+      storeinfo: "Store Info",
     },
     common: {
       price: "¥",

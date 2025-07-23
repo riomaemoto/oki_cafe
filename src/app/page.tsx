@@ -216,8 +216,8 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?q=80&w=1068&auto=format&fit=crop"
-                  alt="Club Sandwich"
+                  src="https://images.unsplash.com/photo-1539252554453-80ab65ce3586?q=80&w=800&auto=format&fit=crop"
+                  alt="Delicious Sandwich"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300"></div>
@@ -376,10 +376,10 @@ export default function Home() {
                 <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
               </div>
               <p className="text-gray-600 mb-6 italic">
-                "地元の食材を使った料理が本当に美味しい！特にサンドイッチがおすすめです。"
+                "雰囲気が最高で、仕事の合間にリラックスできる場所です。Wi-Fiも完備されていて助かります。"
               </p>
-              <div className="font-semibold text-gray-800">佐藤 健</div>
-              <div className="text-gray-500 text-sm">大阪府</div>
+              <div className="font-semibold text-gray-800">山田 花子</div>
+              <div className="text-gray-500 text-sm">沖縄県</div>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-8 text-center">
@@ -387,10 +387,10 @@ export default function Home() {
                 <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
               </div>
               <p className="text-gray-600 mb-6 italic">
-                "雰囲気が最高で、仕事の合間にリラックスできる場所です。Wi-Fiも完備されていて助かります。"
+                "地元の食材を使った料理が本当に美味しい！特にサンドイッチがおすすめです。"
               </p>
-              <div className="font-semibold text-gray-800">山田 花子</div>
-              <div className="text-gray-500 text-sm">沖縄県</div>
+              <div className="font-semibold text-gray-800">佐藤 健</div>
+              <div className="text-gray-500 text-sm">大阪府</div>
             </div>
           </div>
         </div>

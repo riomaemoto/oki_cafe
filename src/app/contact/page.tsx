@@ -16,7 +16,9 @@ export default function ContactPage() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">店舗情報</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              {t("contact.storeinfo")}
+            </h2>
 
             <div className="space-y-6">
               <div>
@@ -48,12 +50,19 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="h-64 bg-gradient-to-r from-teal-400 to-blue-500 flex items-center justify-center">
-              <div className="text-center text-white">
-                <h3 className="text-2xl font-bold mb-2">地図</h3>
-                <p className="text-sm opacity-90">Map Location</p>
-                <div className="mt-4 w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto">
-                  <span className="text-3xl">🗺️</span>
+            <div className="h-64 relative">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=256&fit=crop&crop=center"
+                alt="Contact Us - Phone and Communication"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <h3 className="text-2xl font-bold mb-2">
+                    お気軽にお問い合わせください
+                  </h3>
+                  <p className="text-sm opacity-90">Feel free to contact us</p>
                 </div>
               </div>
             </div>
