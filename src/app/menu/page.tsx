@@ -112,7 +112,7 @@ export default function MenuPage() {
             {t("menu.title")}
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-amber-500 to-orange-500 mx-auto mb-6 rounded-full"></div>
-          <p className="text-xl text-amber-200 max-w-2xl mx-auto drop-shadow-lg font-light">
+          <p className="text-lg text-amber-200 max-w-2xl mx-auto drop-shadow-lg font-light">
             {t("menu.subtitle")}
           </p>
         </div>
