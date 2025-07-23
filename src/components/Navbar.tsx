@@ -12,6 +12,9 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === "/";
+  const isMenuPage = pathname === "/menu";
+  const isAboutPage = pathname === "/about";
+  const isContactPage = pathname === "/contact";
 
   // Add scroll detection
   useEffect(() => {
@@ -29,48 +32,20 @@ export default function Navbar() {
   };
 
   // Helper function to get link classes
-  const getLinkClasses = (path: string, isContactButton = false) => {
+  const getLinkClasses = (path: string) => {
     const isActive = isActiveLink(path);
 
-    if (isContactButton) {
-      // Contact button styling (keeping the original CTA style)
-      return `px-4 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg ${
-        isHomePage
-          ? scrolled
-            ? "bg-amber-600 text-white hover:bg-amber-700"
-            : "bg-amber-600 text-white hover:bg-amber-700"
-          : "bg-amber-600 text-white hover:bg-amber-700"
-      }`;
-    }
-
     // Regular navigation links
-    if (isHomePage) {
-      if (scrolled) {
-        // Home page after scroll - dark text on white background
+    if (isHomePage || isMenuPage || isAboutPage || isContactPage) {
+      if (!scrolled) {
         return `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md ${
           isActive
             ? "bg-amber-600 text-white"
-            : "text-gray-700 hover:text-amber-600 hover:bg-amber-50"
-        }`;
-      } else {
-        // Home page before scroll - white text on transparent background
-        return `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md ${
-          isActive
-            ? "bg-white/30 backdrop-blur-sm text-white border border-white/50"
-            : "text-white hover:text-amber-200 hover:bg-white/20 backdrop-blur-sm drop-shadow-sm"
+            : "text-white-700 hover:text-amber-600 hover:bg-amber-50"
         }`;
       }
-    } else {
-      // Other pages - always dark text on white background
-      return `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-md ${
-        isActive
-          ? "bg-amber-600 text-white"
-          : "text-gray-700 hover:text-amber-600 hover:bg-amber-50"
-      }`;
     }
   };
-
-  // Updated navbar class with scroll-based background
 
   return (
     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,10 +77,7 @@ export default function Navbar() {
               <Link href="/about" className={getLinkClasses("/about")}>
                 {t("nav.about")}
               </Link>
-              <Link
-                href="/contact"
-                className={getLinkClasses("/contact", true)}
-              >
+              <Link href="/contact" className={getLinkClasses("/contact")}>
                 {t("nav.contact")}
               </Link>
             </div>
